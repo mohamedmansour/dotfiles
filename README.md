@@ -13,3 +13,8 @@ My Dotfiles for OSX in case anyone is wondering ...
   git pull origin master
   ```
 4. Restart terminal. Or source bash_profile
+
+
+## Screenshots
+
+![PS1](https://github.com/mohamedmansour/dotfiles/raw/master/screenshots/ps1.png)

@@ -1,7 +1,7 @@
 # Ignore everything in root 
-*
+/*
 
 # Include these files which are important for dotfiles
 !.gitignore
 !.bash_profile
-
+!screenshots/
