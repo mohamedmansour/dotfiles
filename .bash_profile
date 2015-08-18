@@ -5,7 +5,13 @@ fi
 source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 
 # Colorize terminal.
-export PS1="\[\033[33m\]\w\$(__git_ps1 \" (\[\033[36m\]%s\[\033[33m\])\") \$ \[\033[0m\]"
+text_reset='\e[0;0m'
+text_green='\e[0;32m'
+text_bold_green='\e[1;32m'
+text_yellow='\e[0;33m'
+text_cyan='\e[0;36m'
+
+export PS1="\n\[$text_green\]\u \[$text_yellow\]\w\$(__git_ps1 \" (\[$text_cyan\]%s\[$text_yellow\])\")\n\[$text_bold_green\]\$ \[$text_reset\]"
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export GREP_OPTIONS='--color=auto'
