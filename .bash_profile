@@ -1,3 +1,6 @@
+# the default limit on the number of simultaneous file descriptors open
+ulimit -S -n 1024
+
 # Include git bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
@@ -19,3 +22,13 @@ export GREP_OPTIONS='--color=auto'
 # Ignore case sensitive auto completion in bash
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
+
+# .NET Unix
+[ -s "/Users/mmansour/.dnx/dnvm/dnvm.sh" ] && . "/Users/mmansour/.dnx/dnvm/dnvm.sh" # Load dnvm
+
+# NVM
+. ~/.nvm/nvm.sh
+
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
