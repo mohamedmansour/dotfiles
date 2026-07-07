@@ -17,6 +17,8 @@ in
     gh        # github cli
     lazygit
     neovim
+    github-copilot-cli  # copilot in the terminal
+    git-credential-manager  # auth helper for git over https
     # rust toolchain
     cargo
     rustc
@@ -40,6 +42,11 @@ in
       m = "gh auth switch";
       co = "copilot --yolo";
     };
+  };
+
+  programs.git = {
+    enable = true;
+    settings.credential.helper = "${pkgs.git-credential-manager}/bin/git-credential-manager";
   };
 
   programs.starship = {

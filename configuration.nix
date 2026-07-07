@@ -43,7 +43,7 @@
     ];
     casks = [
       "ghostty"
-      "copilot-cli"
+      "github-copilot-app"
     ];
   };
 }
