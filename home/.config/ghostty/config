@@ -1,0 +1,16 @@
+# Ghostty config - symlinked into place by home.nix.
+# Docs: https://ghostty.org/docs/config/reference
+
+font-family = Hack Nerd Font
+font-size = 14
+
+theme = dark:GruvboxDark,light:GruvboxLight
+background-opacity = 0.95
+window-padding-x = 8
+window-padding-y = 8
+
+cursor-style = block
+mouse-hide-while-typing = true
+
+macos-option-as-alt = true
+confirm-close-surface = false
