@@ -19,7 +19,7 @@ Running the switch builds:
 - Shell (zsh, aliases, starship prompt)
 - Editor (Neovim config)
 - Terminal (Ghostty config)
-- Agent configs (Copilot CLI, Codex, opencode all share one AGENTS.md)
+- Agent configs (Copilot CLI, Codex share one AGENTS.md)
 
 ## Prerequisites
 
@@ -113,7 +113,7 @@ If you don't use it, just remove it from `brews` in your copy.
 
 **Heads-up:**
 
-- `home/AGENTS.md` is my personal agent policy, and `home.nix` installs it for Copilot CLI, Codex, and opencode.
+- `home/AGENTS.md` is my personal agent policy, and `home.nix` installs it for Copilot CLI and Codex.
   If you clone this repo, you'd silently inherit my agent instructions - edit or delete `home/AGENTS.md` if you don't want that.
 - The `co` shell alias in `home.nix` is a high-agency shortcut: `copilot --yolo`.
   It's convenient for me, but know what it does before you use it.
