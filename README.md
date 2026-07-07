@@ -1,7 +1,5 @@
 # dotfiles
 
-Watch the walkthrough: https://youtu.be/5N-okeDdIuI
-
 My personal Mac setup, managed with nix-darwin and home-manager.
 One repo, one command, and a fresh Mac ends up configured the same way every time.
 
@@ -17,7 +15,7 @@ Running the switch builds:
 
 - System settings (dark mode, key repeat, dock, Finder, trackpad)
 - Homebrew apps (casks and CLI tools)
-- Nix user packages (ripgrep, fd, fzf, jq, lazygit, Neovim, Hack Nerd Font)
+- Nix user packages (ripgrep, fd, fzf, jq, gh, lazygit, Neovim, Hack Nerd Font)
 - Shell (zsh, aliases, starship prompt)
 - Editor (Neovim config)
 - Terminal (Ghostty config)
