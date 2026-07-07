@@ -14,3 +14,27 @@ mouse-hide-while-typing = true
 
 macos-option-as-alt = true
 confirm-close-surface = false
+
+# shell integration - cursor shape/title updates and sudo password prompt handling
+shell-integration = zsh
+shell-integration-features = cursor,sudo,title
+
+# keep a deep history for reviewing long build/test output
+scrollback-limit = 10000000
+
+# drop-down quick terminal, like iTerm's hotkey window
+keybind = global:cmd+grave_accent=toggle_quick_terminal
+
+# explicit split navigation
+keybind = cmd+d=new_split:right
+keybind = cmd+shift+d=new_split:down
+keybind = cmd+[=goto_split:previous
+keybind = cmd+]=goto_split:next
+
+# clipboard behavior
+clipboard-paste-protection = true
+copy-on-select = true
+
+# disable ligatures for clearer code rendering
+font-feature = -calt
+font-feature = -liga
