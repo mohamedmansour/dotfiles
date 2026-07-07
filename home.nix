@@ -36,6 +36,8 @@ in
     syntaxHighlighting.enable = true;  # commands turn green when valid
     initContent = ''
       bindkey '^f' autosuggest-accept
+      export LANG=en_US.UTF-8
+      [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
     '';
     shellAliases = {
       ".." = "cd ..";
