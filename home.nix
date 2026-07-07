@@ -17,6 +17,11 @@ in
     gh        # github cli
     lazygit
     neovim
+    # rust toolchain
+    cargo
+    rustc
+    rustfmt
+    clippy
     # the font everything renders in
     nerd-fonts.hack
   ];
