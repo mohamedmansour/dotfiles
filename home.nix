@@ -17,6 +17,10 @@ in
     gh        # github cli
     lazygit
     neovim
+    bat       # cat with syntax highlighting
+    eza       # modern ls with icons and git status
+    dust      # visual disk usage
+    htop      # better process viewer
     github-copilot-cli  # copilot in the terminal
     git-credential-manager  # auth helper for git over https
     # rust toolchain
@@ -43,6 +47,10 @@ in
       ".." = "cd ..";
       m = "gh auth switch";
       co = "copilot --yolo";
+      ls = "eza --icons";
+      ll = "eza -la --icons --git";
+      tree = "eza --tree --icons";
+      cat = "bat";
     };
   };
 

@@ -25,6 +25,7 @@
       AppleShowAllExtensions = true;
     };
     dock.autohide = true;
+    dock.show-recents = false;
     finder.FXPreferredViewStyle = "Nlsv";  # list view by default
     finder.CreateDesktop = false;          # clean desktop
     trackpad.Clicking = true;              # tap to click
