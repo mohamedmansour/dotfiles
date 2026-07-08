@@ -33,6 +33,10 @@
     enable = true;
     inherit user;
   };
+  system.activationScripts.extraActivation.text = ''
+    /opt/homebrew/bin/brew trust microsoft/git 2>/dev/null || true
+  '';
+
   homebrew = {
     enable = true;
     onActivation.cleanup = "zap";  # remove anything not listed here
@@ -41,9 +45,13 @@
     brews = [
       "herdr"
     ];
+    taps = [
+      "microsoft/git"
+    ];
     casks = [
       "ghostty"
       "github-copilot-app"
+      "microsoft-git"
     ];
   };
 }
