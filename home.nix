@@ -23,11 +23,8 @@ in
     htop      # better process viewer
     github-copilot-cli  # copilot in the terminal
     git-credential-manager  # auth helper for git over https
-    # rust toolchain
-    cargo
-    rustc
-    rustfmt
-    clippy
+    # rust toolchain (rustup manages cargo, rustc, rustfmt, clippy)
+    rustup
     # the font everything renders in
     nerd-fonts.hack
   ];
