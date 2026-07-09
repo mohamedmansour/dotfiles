@@ -17,6 +17,8 @@ in
     gh        # github cli
     lazygit
     neovim
+    nodejs
+    pnpm
     bat       # cat with syntax highlighting
     eza       # modern ls with icons and git status
     dust      # visual disk usage
