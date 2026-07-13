@@ -53,6 +53,7 @@
       "ghostty"
       "github-copilot-app"
       "microsoft-git"
+      "opensuperwhisper"
       "stats"
     ];
   };

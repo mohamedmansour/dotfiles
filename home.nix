@@ -23,6 +23,9 @@ in
     htop      # better process viewer
     github-copilot-cli  # copilot in the terminal
     git-credential-manager  # auth helper for git over https
+    # node ecosystem
+    nodejs
+    pnpm
     # rust toolchain (rustup manages cargo, rustc, rustfmt, clippy)
     rustup
     # the font everything renders in
@@ -77,6 +80,8 @@ in
   home.file.".config/herdr".source =
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/herdr";
 
+  home.file.".copilot/settings.json".source =
+    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.copilot/settings.json";
   home.file.".copilot/copilot-instructions.md".source =
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/AGENTS.md";
   home.file.".codex/AGENTS.md".source =

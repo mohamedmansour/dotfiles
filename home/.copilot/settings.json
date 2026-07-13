@@ -1,0 +1,4 @@
+{
+  "logLevel": "all",
+  "remote": { "default": "off" }
+}
